@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div id="contact" class="section">
+
+    <!-- container -->
+  
+    <!-- /container -->
+    <div class="container" >
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <!-- contact form -->
+            <div class="col-md-4">
+                <div class="contact-form">
+                    <h4>Add Drive</h4>
+                    <form>
+                        <input class="input" type="number" name="did" placeholder="Drive Id" [(ngModel)]="did">
+                        <input class="input" type="text" name="company" placeholder="Company Name" [(ngModel)]="company">
+                        <input class="input" type="text" name="job" placeholder="Designation" [(ngModel)]="job">
+                        <input class="input" type="text" name="qualificaton" placeholder="Qualification" [(ngModel)]="qualification">
+                        <input class="input" type="text" name="venue" placeholder="Venue" [(ngModel)]="venue">
+                        <input class="input" type="date" name="date" placeholder="Date" [(ngModel)]="date">
+                        
+                        <button class="main-button icon-button pull-centre" (click)="add();">Add</button> &nbsp;
+                        <button class="main-button icon-button pull-centre"  type="reset">Reset</button>
+                    </form>
+                </div> 
+            </div>
+            <!-- /contact form -->
+
+        </div>
+        <!-- /row -->
+
+    </div>
+
+
+</div>
+
+<app-adminfooter></app-adminfooter>

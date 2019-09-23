@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="container">
+
+    <!-- row -->
+    <div class="row"> 
+        <div id="main" class="col-md-9">
+            <div class="blog-comments" *ngFor="let d of drive">
+                <div class="media">
+                   
+                    <div class="media-body">
+                        <h4 class="media-heading">{{d.job}}</h4>
+                        <p><b>Company: </b>{{d.company}}</p>
+                        <p><b>Qualification: </b>{{d.qualification}}</p>
+                        <p><b>Venue: </b>{{d.venue}}</p>
+                        <p><b>Date: </b>{{d.date}}</p>
+                        <div class="date-reply"><button class="btn btn-light">Delete</button>&nbsp;<a href="/editdrive" class="btn btn-light">Edit</a></div>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div></div>
+
+
+
+
+
+<app-adminfooter></app-adminfooter>
